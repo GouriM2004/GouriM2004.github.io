@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font awesome  -->
+    <script
+      src="https://kit.fontawesome.com/4a1ca7713f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <nav class="navbar bg-blur shadow navbar-expand-lg  fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#about">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid g-0">
+      <section
+        class="section-1 d-flex align-items-center justify-content-center"
+        id="home"
+
+      >
+        <div class="text-center d-flex welcome-text"
+        data-aos="fade-up" data-aos-easing="ease-in-out">
+          <div class="row justify-content-center g-0">
+            <h1 class="display-7 name-text fw-medium">Hi, I'm Gouri More!</h1>
+            <h1 class="display-1 fw-medium text-info">
+              Welcome to My Portfolio
+            </h1>
+            <p class="lead fw-medium text-info">
+              Explore my projects and skills
+            </p>
+
+            <p
+              class="lead fw-medium text-info text-center text-info col-11 col-md-6"
+            >
+              A passionate Web Developer based in Nanded City, dedicated to
+              turning innovative ideas into beautiful, high-performance digital
+              solutions.
+            </p>
+            <div class="mt-5">
+              <a href="#projects" class="btn btn-primary col-auto me-4"
+                >View Projects <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <a href="#projects" class="btn btn-primary col-auto"
+                >Contact Me</a
+              >
+            </div>
+            <div class="social mt-5">
+              <a class="text-decoration-none me-5" href=""
+                ><i class="fa-brands fa-github fs-3 text-white"></i
+              ></a>
+              <a class="text-decoration-none me-5" href=""
+                ><i class="fa-brands fa-linkedin fs-3 text-white"></i
+              ></a>
+              <a class="text-decoration-none" href=""
+                ><i class="fa-solid fa-envelope fs-3 text-white"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-2 d-flex flex-column  align-items-center justify-content-center"
+        id="about"
+      >
+
+
+        <h1 class=" margin-buttom text-white mb-5 mb-md-5" data-aos="fade-down" data-aos-once="false" data-aos-easing="ease-in-out">About Me</h1>
+
+        <div class="row g-0 d-flex justify-content-center align-items-center"
+        >
+          
+          <div class="card col-12 col-md-6 rounded-5 ms-md-auto img-container border-0 shadow-lg" data-aos="fade-right" data-aos-once="false">
+            <img src="assets/images/profileImg.jpg" class="card-img-top rounded-5" alt="..." />
+           
+        </div>
+        <div class="about-container shadow-lg col-11 col-md-5 mt-3 mt-md-0 ms-auto me-auto text-light rounded-3  p-2 p-md-5 blur-container " data-aos="fade-left" data-aos-once="false" data-aos-easing="ease-in-out">
+          <p>Hello I'm Gouri Madhavrao More I'm final year BCA ( Bachelor's of computer application)  at the Mgm' s college of computer science and IT , My academic journey has been a little bit dive into technology, but my true passion sparked into the world of web development 
+            <br><br>
+          I have knowledge of html css bootstrap and javascript I can contribute to a team's success while continuosly growing my own skills. My goal is to craft web experience</pr> 
+        </div>
+      </section>
+
+      <section class="section-3 d-flex flex-column  align-items-center justify-content-center"
+        id="Goals">
+
+      </section>
+
+    </div>
+
+    <!-- Bootstrap js -->
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS js -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+  AOS.init();
+</script>
+  </body>
+</html>
