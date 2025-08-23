@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <!-- AOS css -->
+    <link href="/assets/css/aos.css" rel="stylesheet">
     <!-- Custom css -->
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <!-- AOS css -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    
     <!-- Font awesome  -->
     <script
       src="https://kit.fontawesome.com/4a1ca7713f.js"
@@ -57,6 +59,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#Goals">Goals</a>
               </li>
             </ul>
           </div>
@@ -117,7 +122,7 @@
       >
 
 
-        <h1 class=" margin-buttom text-white mb-5 mb-md-5" data-aos="fade-down" data-aos-once="false" data-aos-easing="ease-in-out">About Me</h1>
+        <h1 class=" border-bottom text-white mb-5 mb-md-5" data-aos="fade-down" data-aos-once="false" data-aos-easing="ease-in-out">About Me</h1>
 
         <div class="row g-0 d-flex justify-content-center align-items-center"
         >
@@ -126,16 +131,50 @@
             <img src="assets/images/profileImg.jpg" class="card-img-top rounded-5" alt="..." />
            
         </div>
-        <div class="about-container shadow-lg col-11 col-md-5 mt-3 mt-md-0 ms-auto me-auto text-light rounded-3  p-2 p-md-5 blur-container " data-aos="fade-left" data-aos-once="false" data-aos-easing="ease-in-out">
-          <p>Hello I'm Gouri Madhavrao More I'm final year BCA ( Bachelor's of computer application)  at the Mgm' s college of computer science and IT , My academic journey has been a little bit dive into technology, but my true passion sparked into the world of web development 
+        <div class="about-container shadow-lg col-11 col-md-5 mt-3 mt-md-0 ms-auto me-auto text-light rounded-3  p-2 p-md-5 blur-container " data-aos="fade-up" data-aos-once="false" data-aos-easing="ease-in-out">
+          <p class="about-text">Hello I'm Gouri Madhavrao More I'm final year BCA ( Bachelor's of computer application)  at the Mgm' s college of computer science and IT , My academic journey has been a little bit dive into technology, but my true passion sparked into the world of web development 
             <br><br>
-          I have knowledge of html css bootstrap and javascript I can contribute to a team's success while continuosly growing my own skills. My goal is to craft web experience</pr> 
+          I have knowledge of html css bootstrap and javascript I can contribute to a team's success while continuosly growing my own skills. My goal is to craft web experience 
+          <!-- <hr> -->
+          <!-- <div class="personal-info d-md-flex d-block  justify-content-between">
+            <span class="col-12 col-md-6"> <span class="fw-semibold">Name</span> <br>Gouri Madhavrao More <br></span>
+            <span class="col-12 col-md-6"> <span class="fw-semibold">Email</span> <br>gourimore512@example.com</span>
+          </div>
+          <div class="personal-info d-md-flex d-block  justify-content-between">
+            <span class="col-12 col-md-6"> <span class="fw-semibold">Location</span> <br> Nanded City, Maharashtra, India</span>
+            <span class="col-12 col-md-6"> <span class="fw-semibold">Availability</span> <br>Open to work</span>
+          </div> -->
+
+        </p>
         </div>
       </section>
 
       <section class="section-3 d-flex flex-column  align-items-center justify-content-center"
         id="Goals">
-
+        <h1 class=" border-bottom text-white mb-5 mb-md-5" data-aos="fade-down" data-aos-once="false" data-aos-easing="ease-in-out">Goals</h1>
+        <div class="row g-0 gap-2 w-100 row-cols-3  d-flex justify-content-center align-items-center">
+          <div class="card col-12 col-md-3 blur-container shadow-lg ">
+            <div class="card-body text-white">
+              <h4 class="card-title text-center">
+                <i class="fa-solid fa-rocket me-2 fs-2 text-success"></i>Short-Term Goal</h4>
+              <p class="card-text ">Seeking a Frontend Developer role where I can leverage my expertise in React and Next.js to build dynamic, user-friendly applications while contributing to impactful projects and enhancing my skills in a collaborative environment.</p>
+            </div>
+          </div>
+          <div class="card col-12 col-md-3 blur-container shadow-lg">
+            <div class="card-body text-white">
+              <h4 class="card-title text-center">
+                <i class="fa-solid fa-chart-bar fs-2 me-2 text-success"></i>Mid-Term Goal</h4>
+              <p class="card-text">To evolve into a Senior Frontend Developer, taking ownership of complex features, mentoring junior developers, and deepening my expertise in performance optimization and building highly scalable applications.</p>
+            </div>
+          </div>
+          <div class="card col-12 col-md-3 blur-container shadow-lg">
+            <div class="card-body text-white">
+              <h4 class="card-title text-center">
+                <i class="fa-solid fa-bullseye fs-2 me-2 text-success"></i>Long-Term Goal</h4>
+              <p class="card-text">To become a technical lead or solutions architect, guiding technical strategy, driving innovation in user experience, and making a significant impact on the products and teams I help create.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
     </div>
@@ -143,7 +182,7 @@
     <!-- Bootstrap js -->
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <!-- AOS js -->
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script src="/assets/js/aos.js"></script>
      <script>
   AOS.init();
 </script>
