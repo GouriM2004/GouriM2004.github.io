@@ -1,3 +1,33 @@
+/* Responsive project cards for section 5 */
+.project-card {
+  max-width: auto;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.project-card img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.project-card .card-body {
+  padding: 1rem;
+}
+@media (max-width: 767px) {
+  .project-card {
+    max-width: 95vw;
+    margin-bottom: 1.5rem;
+  }
+  .project-card .card-title {
+    font-size: 1.1rem;
+  }
+  .project-card .card-text {
+    font-size: 0.98rem;
+  }
+}
 body,
 html {
   margin: 0;
@@ -24,7 +54,7 @@ body::-webkit-scrollbar {
   background-color: #f8f9fa;
   height: 100vh;
   width: 100%;
-  background-image: url("/assets/images/about.jpg");
+  background-image: url("/assets/images/goal.jpg");
   background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,7 +64,27 @@ body::-webkit-scrollbar {
   background-color: #f8f9fa;
   height: 100vh;
   width: 100%;
-  background-image: url("/assets/images/goal.jpg");
+  background-image: url("/assets/images/about.jpg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-4 {
+  background-color: #f8f9fa;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/assets/images/exxpericane.jpeg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-5 {
+  background-color: #f8f9fa;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/assets/images/exxpericane.jpeg");
   background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,4 +132,10 @@ img:hover {
   .img-container {
     width: 75% !important;
   }
+}
+.section-5 .card .card-img-top {
+  max-height: auto !important;
+  max-width: auto !important;
+  -o-object-fit: fit !important;
+  object-fit: fit !important;
 } /*# sourceMappingURL=style.css.map */
