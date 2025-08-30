@@ -91,7 +91,7 @@ body::-webkit-scrollbar {
 
 .section-8 {
   background-color: #f8f9fa;
-  height: 200vh;
+  height: 100vh;
   width: 100%;
   background-image: url("../images/contact.jpeg");
   background-position: fixed;
@@ -121,7 +121,7 @@ img:hover {
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .blur-container {
@@ -148,12 +148,18 @@ img:hover {
     width: 75% !important;
   }
   .section-5 {
-    height: 200vh;
+    height: 200vh !important;
+  }
+  .section-8 {
+    height: 200vh !important;
   }
 }
 
 @media (max-width: 425px) {
   .section-5 {
+    height: 200vh !important;
+  }
+  .section-8 {
     height: 200vh !important;
   }
 }
@@ -162,7 +168,7 @@ img:hover {
   max-height: auto !important;
   max-width: auto !important;
   -o-object-fit: fit !important;
-     object-fit: fit !important;
+  object-fit: fit !important;
 }
 
 .scss-color {

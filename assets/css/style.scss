@@ -6,6 +6,7 @@
   --html: #e34f26;
   --php: #8993be;
 }
+
 body,
 html {
   margin: 0;
@@ -13,9 +14,11 @@ html {
   height: 100vh;
   font-family: "Poppins", sans-serif;
 }
+
 body::-webkit-scrollbar {
   display: none;
 }
+
 .section-1 {
   background-color: #f8f9fa;
   height: 100vh;
@@ -25,6 +28,7 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .section-2 {
   background-color: #f8f9fa;
   height: 100vh;
@@ -34,6 +38,7 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .section-3 {
   background-color: #f8f9fa;
   height: 100vh;
@@ -43,6 +48,7 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .section-4 {
   background-color: #f8f9fa;
   height: 100vh;
@@ -52,6 +58,7 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .section-5 {
   background-color: #f8f9fa;
   height: 100vh;
@@ -61,6 +68,7 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .section-6 {
   background-color: #f8f9fa;
   height: 100vh;
@@ -70,6 +78,7 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .section-7 {
   background-color: #f8f9fa;
   height: 100vh;
@@ -79,9 +88,10 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .section-8 {
   background-color: #f8f9fa;
-  height: 200vh;
+  height: 100vh;
   width: 100%;
   background-image: url("../images/contact.jpeg");
   background-position: fixed;
@@ -92,35 +102,45 @@ body::-webkit-scrollbar {
 .bg-blur {
   background-color: rgba(17, 48, 53, 0);
 }
+
 .name-text {
-  background: linear-gradient(180deg, rgb(94, 181, 195), rgb(7, 100, 193));
+  background: -webkit-gradient(linear, left top, left bottom, from(#5eb5c3), to(#0764c1));
+  background: linear-gradient(180deg, #5eb5c3, #0764c1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
 .img-container {
   width: 20rem;
 }
+
 img:hover {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
-  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
+
 .blur-container {
   background-color: rgba(17, 48, 53, 0.5);
 }
+
 .about-text {
   font-size: clamp(1rem, 1.5vw, 1.3rem);
 }
+
 @media (max-width: 320px) {
   .img-container {
     width: 75% !important;
   }
 }
-#Goals {
-  .card {
-    min-height: 200px;
-    max-height: auto;
-  }
+
+#Goals .card {
+  min-height: 200px;
+  max-height: auto;
 }
 
 @media (max-width: 320px) {
@@ -128,38 +148,49 @@ img:hover {
     width: 75% !important;
   }
   .section-5 {
-    height: 200vh;
+    height: 200vh !important;
+  }
+  .section-8{
+    height: 200vh !important;
   }
 }
+
 @media (max-width: 425px) {
   .section-5 {
     height: 200vh !important;
   }
-}
-.section-5 {
-  .card {
-    .card-img-top {
-      max-height: auto !important;
-      max-width: auto !important;
-      object-fit: fit !important;
-    }
+  .section-8{
+    height: 200vh !important;
   }
 }
+
+.section-5 .card .card-img-top {
+  max-height: auto !important;
+  max-width: auto !important;
+  -o-object-fit: fit !important;
+     object-fit: fit !important;
+}
+
 .scss-color {
   color: var(--scss);
 }
+
 .bootstrap-color {
   color: var(--bootstrap);
 }
+
 .js-color {
   color: var(--js);
 }
+
 .css-color {
   color: var(--css);
 }
+
 .html-color {
   color: var(--html);
 }
+
 .php-color {
   color: var(--php);
 }
