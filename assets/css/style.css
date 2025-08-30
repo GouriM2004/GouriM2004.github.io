@@ -91,7 +91,7 @@ body::-webkit-scrollbar {
 
 .section-8 {
   background-color: #f8f9fa;
-  height: 100vh;
+  height: 200vh;
   width: 100%;
   background-image: url("../images/contact.jpeg");
   background-position: fixed;
@@ -104,7 +104,8 @@ body::-webkit-scrollbar {
 }
 
 .name-text {
-  background: linear-gradient(180deg, rgb(94, 181, 195), rgb(7, 100, 193));
+  background: -webkit-gradient(linear, left top, left bottom, from(#5eb5c3), to(#0764c1));
+  background: linear-gradient(180deg, #5eb5c3, #0764c1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -115,8 +116,12 @@ body::-webkit-scrollbar {
 }
 
 img:hover {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
-  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .blur-container {
@@ -132,6 +137,7 @@ img:hover {
     width: 75% !important;
   }
 }
+
 #Goals .card {
   min-height: 200px;
   max-height: auto;
@@ -145,11 +151,13 @@ img:hover {
     height: 200vh;
   }
 }
+
 @media (max-width: 425px) {
   .section-5 {
     height: 200vh !important;
   }
 }
+
 .section-5 .card .card-img-top {
   max-height: auto !important;
   max-width: auto !important;
@@ -179,4 +187,5 @@ img:hover {
 
 .php-color {
   color: var(--php);
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
