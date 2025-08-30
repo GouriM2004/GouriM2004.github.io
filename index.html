@@ -16,6 +16,7 @@
       src="https://kit.fontawesome.com/4a1ca7713f.js"
       crossorigin="anonymous"
     ></script>
+    
     <title>My Portfolio</title>
   </head>
   <body>
@@ -330,7 +331,7 @@
           <div class="p-4 col-12 col-md-5 blur-container rounded-3">
             <h1>Send Me a Message</h1>
             <div class="mt-3">
-              <form action="mail_send.php" method="post">
+              <form id="contact-form">
                 <div class="mb-3">
                   <label for="name" class="form-label">Name</label>
                   <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
@@ -345,7 +346,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="message" class="form-label">Message</label>
-                  <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message"   required></textarea>
+                  <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary text-center">Send Message</button>
               </form>
@@ -368,5 +369,11 @@
      <script>
   AOS.init();
 </script>
+<!-- EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      emailjs.init('30CEduODc1dL864hg'); // Replace with your EmailJS user ID
+    </script>
+    <script src="/assets/js/mail_send.js"></script>
   </body>
 </html>
