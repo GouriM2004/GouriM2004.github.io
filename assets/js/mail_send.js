@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     // Replace these with your EmailJS service/template IDs
-    const serviceID = "service_6lqr3lg";
-    const templateID = "template_jyz4n7w";
+    const serviceID = "service_do3jink";
+    const templateID = "template_486cnzf";
 
     emailjs.sendForm(serviceID, templateID, form).then(
       function () {
