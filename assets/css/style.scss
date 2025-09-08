@@ -104,7 +104,13 @@ body::-webkit-scrollbar {
 }
 
 .name-text {
-  background: -webkit-gradient(linear, left top, left bottom, from(#5eb5c3), to(#0764c1));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#5eb5c3),
+    to(#0764c1)
+  );
   background: linear-gradient(180deg, #5eb5c3, #0764c1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -121,7 +127,7 @@ img:hover {
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .blur-container {
@@ -150,7 +156,7 @@ img:hover {
   .section-5 {
     height: 200vh !important;
   }
-  .section-8{
+  .section-8 {
     height: 200vh !important;
   }
 }
@@ -159,8 +165,16 @@ img:hover {
   .section-5 {
     height: 200vh !important;
   }
-  .section-8{
+  .section-8 {
+    height: 150vh !important;
+  }
+}
+@media (max-width: 768px) {
+  .section-5 {
     height: 200vh !important;
+  }
+  .section-8 {
+    height: 150vh !important;
   }
 }
 
@@ -168,7 +182,7 @@ img:hover {
   max-height: auto !important;
   max-width: auto !important;
   -o-object-fit: fit !important;
-     object-fit: fit !important;
+  object-fit: fit !important;
 }
 
 .scss-color {
